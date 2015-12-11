@@ -18,6 +18,10 @@ def save_jvm_monitor(uid,j):
     val['cpu_load']=jj[4]
     val['class_count']=jj[5]
     val['open_file_descriptor']=jj[6]
+    val['used_eden_mem']=jj[7]
+    val['used_old_mem']=jj[8]
+    val['used_perm_mem']=jj[9]
+    val['used_surv_mem']=jj[10]
     val['id']=uid
     url = str(baseurl)+'/jvm/'+str(uid)+'/monitor'
     try:
